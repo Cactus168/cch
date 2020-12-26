@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/public_style_parent_layout"
+    tools:context="com.jo.cch.activity.PinyinknowActivity">
+
+    <RelativeLayout style="@style/public_style_Head" android:id="@+id/headerLayout">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backIv"
+            style="@style/public_style_Head_Back"
+            app:srcCompat="@drawable/ic_back" />
+        <TextView style="@style/public_style_Head_Title" android:text="拼音认读"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:drawableLeft="@drawable/tips"
+                android:text="共100个，已读20个，对10个，错10个"
+                android:textColor="@color/red"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.jo.cch.view.FieldWordTextView
+                    android:id="@+id/word"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:maxLines="1"
+                    android:background="@color/fieldWordBG"
+                    android:text="帮"
+                    android:textSize="500px"
+                    android:textColor="@color/orange"/>
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/textview_round_style"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tv_jc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:text="纠错"
+                    android:textColor="@color/skybule"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout style="@style/public_style_LinearLayout_One_ButRow" android:layout_weight="1">
+                <Button
+                    style="@style/Public_Style_One_Buttonx"
+                    android:id="@+id/pinYin1"
+                    android:text="buang"
+                    android:textSize="100dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout style="@style/public_style_LinearLayout_One_ButRow" android:layout_weight="1">
+                <Button
+                    style="@style/Public_Style_One_Buttonx"
+                    android:id="@+id/pinYin2"
+                    android:text="buang"
+                    android:textSize="100dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout style="@style/public_style_LinearLayout_One_ButRow" android:layout_weight="1">
+                <Button
+                    style="@style/Public_Style_One_Buttonx"
+                    android:id="@+id/pinYin3"
+                    android:text="buang"
+                    android:textSize="100dp"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

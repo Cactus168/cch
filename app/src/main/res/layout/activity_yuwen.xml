@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/public_style_parent_layout"
+    tools:context="com.jo.cch.activity.LiteracyActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        style="@style/public_style_Head">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backIv"
+            style="@style/public_style_Head_Back"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            style="@style/public_style_Head_Title"
+            android:text="语文" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="#dde5e5e5"
+            android:orientation="vertical">
+
+            <ExpandableListView
+                android:id="@+id/expend_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layoutDirection="rtl"></ExpandableListView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/tv_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </android.support.constraint.ConstraintLayout>
+
+            <RelativeLayout
+                android:id="@+id/toolBar"
+                style="@style/public_style_HeadX"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="1dp"
+                android:background="#dde5e5e5"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tips"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/tips"
+                    android:textColor="@color/red" />
+
+                <LinearLayout
+                    style="@style/public_style_LinearLayout_Many_ButRow"
+                    android:layout_toRightOf="@+id/tips">
+
+                    <Button
+                        android:id="@+id/selectMode"
+                        style="@style/Public_Style_One_Button"
+                        android:text="选取模式" />
+
+                    <Button
+                        android:id="@+id/speedMode"
+                        style="@style/Public_Style_One_Button"
+                        android:layout_toLeftOf="@+id/selectMode"
+                        android:text="速认认字" />
+
+                    <Button
+                        android:id="@+id/pinMode"
+                        style="@style/Public_Style_One_Button"
+                        android:text="拼写认字" />
+
+                    <Button
+                        android:id="@+id/pinYinMode"
+                        style="@style/Public_Style_One_Button"
+                        android:text="拼音认字" />
+
+                    <Button
+                        android:id="@+id/yuYinMode"
+                        style="@style/Public_Style_One_Button"
+                        android:text="语音认字" />
+
+                    <Button
+                        style="@style/Public_Style_One_Button"
+                        android:id="@+id/goLearnMode"
+                        android:text="生字学习" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

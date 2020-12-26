@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="35dp"
+android:background="#f3f5f7">
+    <View
+        android:id="@+id/v_tt"
+        android:layout_width="4dp"
+        android:layout_height="25dp"
+        android:background="#53A16C"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="第一课："
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/v_tt"/>
+
+    <LinearLayout
+        android:id="@+id/ll_course"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+    <CheckBox
+        android:id="@+id/cb_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="全"/>
+
+    <CheckBox
+        android:id="@+id/cb_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="写"/>
+
+        <CheckBox
+            android:id="@+id/cb_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="识" />
+    </LinearLayout>
+</RelativeLayout>

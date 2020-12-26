@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/public_style_parent_layout"
+    android:orientation="vertical"
+    tools:context="com.jo.cch.activity.ShuxueActivity">
+    <RelativeLayout style="@style/public_style_Head" android:id="@+id/headerLayout">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backIv"
+            style="@style/public_style_Head_Back"
+            app:srcCompat="@drawable/ic_back" />
+        <TextView style="@style/public_style_Head_Title" android:text="数学"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="100dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_jiafa"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/box05"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="true"
+                android:paddingLeft="20dip"
+                android:text="加法"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <RadioButton
+                android:id="@+id/rb_jianfa"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/box05"
+                android:button="@null"
+                android:paddingLeft="20dip"
+                android:text="减法"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+            <RadioButton
+                android:id="@+id/rb_chengfa"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/box05"
+                android:button="@null"
+                android:paddingLeft="20dip"
+                android:text="乘法"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb_chufa"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/box05"
+                android:button="@null"
+                android:paddingLeft="20dip"
+                android:text="除法"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/shuxue_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"></LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/public_style_parent_layout"
+    tools:context="com.jo.cch.activity.WordduActivity">
+
+    <RelativeLayout style="@style/public_style_Head" android:id="@+id/headerLayout">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backIv"
+            style="@style/public_style_Head_Back"
+            app:srcCompat="@drawable/ic_back" />
+        <TextView style="@style/public_style_Head_Title" android:text="生字学习"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true">
+            <TextView android:id="@+id/tv_wordTs" style="@style/public_style_Head_Title" android:text="共:10个  已学5个"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.jo.cch.view.StepView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                app:check_num="1"
+                app:step_names="@array/bottomNames"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.jo.cch.view.FieldWordTextView
+                        android:id="@+id/word"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/fieldWordBG"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:text="帮"
+                        android:textColor="@color/orange"
+                        android:textSize="500px" />
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/textview_round_style"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="3"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:padding="10dp"
+                    android:background="@drawable/linearlayout_boder"
+                    android:orientation="vertical">
+                    <!--签名框-->
+                    <com.jo.cch.view.SignatureView
+                        android:id="@+id/gsv_signature"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal">
+                    <LinearLayout android:id="@+id/but_area4" style="@style/public_style_LinearLayout_Many_ButRow"
+                        android:layout_gravity="bottom">
+                        <Button style="@style/Public_Style_Tow_Button"
+                            android:id="@+id/btn_clear"
+                            android:text="重写"/>
+                        <Button style="@style/Public_Style_Tow_Button"
+                            android:id="@+id/btn_save"
+                            android:text="提交"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

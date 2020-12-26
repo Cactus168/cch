@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/public_style_parent_layout"
+    tools:context="com.jo.cch.activity.SpeedActivity">
+    <RelativeLayout style="@style/public_style_Head" android:id="@+id/headerLayout">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/backIv"
+            style="@style/public_style_Head_Back"
+            app:srcCompat="@drawable/ic_back" />
+        <TextView style="@style/public_style_Head_Title" android:text="数学练习"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:drawableLeft="@drawable/tips"
+                android:layout_alignParentTop="true"
+                android:text="共100个"
+                android:textColor="@color/red"/>
+            <TextView
+                android:id="@+id/tv_formula"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="2+3=?"
+                android:textSize="180dp"
+                android:textColor="@color/orange"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/textview_round_style"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                style="@style/Public_Style_One_Buttonx"
+                android:id="@+id/but_val1"
+                android:text="5"
+                android:textStyle="bold"/>
+            <Button
+                style="@style/Public_Style_One_Buttonx"
+                android:id="@+id/but_val2"
+                android:text="6"
+                android:textStyle="bold"/>
+            <Button
+                style="@style/Public_Style_One_Buttonx"
+                android:id="@+id/but_val3"
+                android:text="7"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

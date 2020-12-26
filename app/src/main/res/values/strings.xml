@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">孩子帮</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="title_activity_tts">TtsActivity</string>
+
+    <string-array name="bottomNames">
+        <item>读</item>
+        <item>写</item>
+        <item>拼</item>
+    </string-array>
+    <string name="title_activity_wordmain">WordmainActivity</string>
+</resources>

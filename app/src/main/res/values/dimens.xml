@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolBarHeight">48dp</dimen>
+    <dimen name="toolBarHeightX">55dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="b_layout_height">140dp</dimen><!--领用检测情况文本框高度-->
+    <dimen name="r_layout_height">90dp</dimen><!--归还检测情况文本框高度-->
+    <dimen name="c_layout_height">140dp</dimen><!--检查检测情况文本框高度-->
+    <dimen name="s_layout_height">140dp</dimen><!--报废检测情况文本框高度-->
+
+    <dimen name="listViewItem_height">45dp</dimen>
+
+    <dimen name="listViewTitle_width">150dp</dimen>
+    <dimen name="listViewItem_width">150dp</dimen>
+
+    <dimen name="listViewItem_name_marginLeft">10dp</dimen>
+    <dimen name="listViewItem_company_marginLeft">5dp</dimen>
+
+    <dimen name="actions_item_font">14sp</dimen>
+    <dimen name="actions_item_drawablePaddding">10dip</dimen>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+style="@style/public_style_parent_layout"
+tools:context="com.jo.cch.activity.VoiceActivity">
+
+<RelativeLayout style="@style/public_style_Head" android:id="@+id/headerLayout">
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/backIv"
+        style="@style/public_style_Head_Back"
+        app:srcCompat="@drawable/ic_back" />
+    <TextView style="@style/public_style_Head_Title" android:text="语音认读"/>
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.jo.cch.view.FieldWordTextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:background="@color/fieldWordBG"
+                android:text="帮"
+                android:textSize="500px"
+                android:textColor="@color/orange"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/textview_round_style"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_jc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="纠错"
+                android:textColor="@color/skybule"/>
+            <TextView
+                android:id="@+id/tv_bh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="不会"
+                android:textColor="@color/skybule"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_total_msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/orange"
+                android:gravity="center"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_redtotal_msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/paleturquoise"
+                android:gravity="center"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_yes_msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/springgreen"
+                android:gravity="center"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/tv_no_msg"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:gravity="center"
+                android:text="10"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+            <com.jo.cch.view.WaveLineView
+                android:id="@+id/waveLineView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:wlvBackgroundColor="@android:color/white"
+                app:wlvMoveSpeed="290"/>
+            <ImageButton
+                android:id="@+id/startSpeechButton"
+                android:src="@drawable/voice_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
